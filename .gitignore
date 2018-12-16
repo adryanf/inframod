@@ -1,2 +1,4 @@
 /example/sample/node_modules
 /node_modules
+/example/infrastructure/node_modules
+/example/service/node_modules

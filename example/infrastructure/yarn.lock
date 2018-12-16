@@ -139,6 +139,10 @@ fecha@^2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/fecha/-/fecha-2.3.3.tgz#948e74157df1a32fd1b12c3a3c3cdcb6ec9d96cd"
 
+find-package-json@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/find-package-json/-/find-package-json-1.1.0.tgz#269b0c148bbe389f027e2c1e0c72fa108eadb348"
+
 find-replace@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/find-replace/-/find-replace-2.0.1.tgz#6d9683a7ca20f8f9aabeabad07e4e2580f528550"
@@ -149,6 +153,17 @@ find-replace@^2.0.1:
 has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
+
+inframod@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/inframod/-/inframod-1.0.0.tgz#ac56965182634912dd3acc40eebb763442b7e948"
+  dependencies:
+    command-line-args "^5.0.2"
+    command-line-usage "^5.0.5"
+    dependency-graph "^0.7.2"
+    find-package-json "^1.1.0"
+    typy "^2.0.1"
+    winston "^3.1.0"
 
 inherits@~2.0.3:
   version "2.0.3"

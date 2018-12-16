@@ -1,8 +1,8 @@
 FROM node:alpine
 
-RUN mkdir common-modules
+RUN mkdir infrastructure
 
-WORKDIR common-modules
+WORKDIR infrastructure
 
 COPY . .
 

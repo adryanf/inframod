@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+'use strict'
+
 const fs = require('fs');
 const DepGraph = require('dependency-graph').DepGraph;
 const child_process = require('child_process');

@@ -23,7 +23,7 @@
   "dependencies": {
     "@nestjs/common": "^5.1.0",
     "@nestjs/core": "^5.1.0",
-    "@rvbd-nestjs/sample": "file:../common-modules/sample",
+    "@nestjs/infra-bar": "file:../infrastructure/bar/bar",
     "fastify": "^1.12.1",
     "fastify-formbody": "^2.0.1",
     "reflect-metadata": "^0.1.12",
