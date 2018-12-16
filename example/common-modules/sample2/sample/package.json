@@ -1,0 +1,32 @@
+{
+  "name": "@rvbd-nestjs/sample2",
+  "version": "1.0.2",
+  "description": "Sample module for Nest - modern, fast, powerful node.js web framework",
+  "author": "Adrian Furculita",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc -p tsconfig.json",
+    "lint": "tslint -c tslint.json lib/**/*.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.41",
+    "rxjs": "^6.2.2",
+    "tslint": "^5.11.0",
+    "typescript": "^2.8.0"
+  },
+  "dependencies": {
+    "@nestjs/common": "^5.1.0",
+    "@nestjs/core": "^5.1.0",
+    "@rvbd-nestjs/sample": "file:../../sample",
+    "reflect-metadata": "^0.1.12",
+    "uuid": "3.3.2"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^5.1.0",
+    "@nestjs/core": "^5.1.0",
+    "reflect-metadata": "^0.1.12"
+  }
+}

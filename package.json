@@ -1,0 +1,21 @@
+{
+  "name": "inframod",
+  "version": "1.0.0",
+  "description": "Local node modules registration and provisioning micro-framework",
+  "author": "Adrian Furculita",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "provision": "./index.js"
+  },
+  "dependencies": {
+    "command-line-args": "^5.0.2",
+    "command-line-usage": "^5.0.5",
+    "dependency-graph": "^0.7.2",
+    "find-package-json": "^1.1.0",
+    "typy": "^2.0.1",
+    "winston": "^3.1.0"
+  }
+}
