@@ -30,11 +30,11 @@ The required fields for a module definition are
 Optional fields
 * dependsOn - array of module keys that the current module is dependning upon and referencing in it's package.json as a file dependency
 
-The build.js script builds a lightweight dependency graph and synchronously iterates it and provisions each module so that it's ready to be referenced by any consumer.
+The index.js script builds a lightweight dependency graph and synchronously iterates it and provisions each module so that it's ready to be referenced by any consumer.
 
 For details about this command run 
 ```
-node build.js -h
+node index.js -h
 ```
 
-The node build.js command requires a -k (--key-path) parameter to identify the parent section of the module definition within package.json (for this particular case the key is rvbd - see package.json)
+The node index.js command requires a -k (--key-path) parameter to identify the parent section of the module definition within package.json (for this particular case the key is rvbd - see package.json)
