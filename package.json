@@ -1,6 +1,6 @@
 {
   "name": "inframod",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Local node modules registration and provisioning micro-framework",
   "author": "Adrian Furculita",
   "license": "MIT",
