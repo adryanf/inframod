@@ -5,10 +5,10 @@
   "author": "Adrian Furculita",
   "license": "MIT",
   "scripts": {
-    "build": "node build.js --key-path infrastructure.modules"
+    "build": "provision --key-path infrastructure.modules"
   },
   "dependencies": {
-    "inframod": "^1.0.0"
+    "inframod": "^1.0.1"
   },
   "infrastructure": {
     "modules": {

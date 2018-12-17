@@ -105,7 +105,7 @@ fs.readFile(packageJsonPath, 'utf8', function (err, data) {
     let moduleId = orderedModuleBuildIds[i];
     let moduleData = graph.getNodeData(moduleId);
     let moduleProvisionCommand = moduleData.provisionCommand;
-    let modulePath = path.join(__dirname, moduleData.path);
+    let modulePath = path.join(packageJsonPath, '../' + moduleData.path);
 
     logger.log('info', 'Building module: %s, located here: %s', moduleId, modulePath);
 
