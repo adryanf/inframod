@@ -1,10 +1,21 @@
-# Inframod
+# inframod
 
-## Local node modules registration and provisioning micro-framework
+Provisions local interdependent package dependencies.
+Create a layer of local node modules, referenced as file dependencies in package.json, so you won't need the packages published to npm or a local npm repo.
+Useful when you want to develop modular applications which rely on shared or common infrastructure modules without heving them deployed on npm.
 
-index.js contains the logic used to build the modules registered in package.json
+## Installation
 
-The registration mechanism requires the definition of the following section within package.json
+The module is released in the public npm registry and can be installed by
+running:
+
+```
+npm install --save inframod
+```
+
+## Usage
+
+Module registration requires the definition of the following section within package.json
 
 ```json
 "modules": {
@@ -13,7 +24,7 @@ The registration mechanism requires the definition of the following section with
         "provisionCommand": "yarn install && yarn run build"
     },
     "bar": {
-        "path": "/path/bar",
+        "path": "/bar/bar",
         "provisionCommand": "yarn install && yarn run build",
         "dependsOn": [
             "foo"
@@ -30,11 +41,17 @@ The required fields for a module definition are
 Optional fields
 * dependsOn - array of module keys that the current module is dependning upon and referencing in it's package.json as a file dependency
 
-The index.js script builds a lightweight dependency graph and synchronously iterates it and provisions each module so that it's ready to be referenced by any consumer.
+The provision-modules command builds a lightweight dependency graph and synchronously iterates it and provisions each module so that it's ready to be referenced by any consumer.
+
+```
+provision-modules --key-path modules
+```
 
 For details about this command run 
 ```
-node index.js -h
+provision-modules -h
 ```
 
-The node index.js command requires a -k (--key-path) parameter to identify the parent section of the module definition within package.json (for this particular case the key is rvbd - see package.json)
+## Example
+
+The [example](example) folder contains a use case which involves the creation of a base docker image containing the infrastructure modules referenced by a modular app.

@@ -154,9 +154,9 @@ has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
 
-inframod@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/inframod/-/inframod-1.0.1.tgz#d08e49d1f0a42eeeae23f9806c0f959661de381b"
+inframod@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/inframod/-/inframod-1.0.2.tgz#1eb76f1b9dfb3390a23810a45cf16441de93b1c6"
   dependencies:
     command-line-args "^5.0.2"
     command-line-usage "^5.0.5"

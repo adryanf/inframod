@@ -5,10 +5,10 @@
   "author": "Adrian Furculita",
   "license": "MIT",
   "scripts": {
-    "build": "provision --key-path infrastructure.modules"
+    "build": "provision-modules --key-path infrastructure.modules"
   },
   "dependencies": {
-    "inframod": "^1.0.1"
+    "inframod": "^1.0.2"
   },
   "infrastructure": {
     "modules": {

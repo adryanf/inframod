@@ -1,4 +1,4 @@
-FROM rvbd-nest/common-modules
+FROM nest-service/infrastructure
 
 # Install pm2
 RUN yarn global add pm2
@@ -26,7 +26,7 @@ RUN rm -rf src
 
 WORKDIR /
 
-RUN rm -rf common-modules
+RUN rm -rf infrastructure
 
 EXPOSE 3000
 
