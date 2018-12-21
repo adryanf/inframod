@@ -1,6 +1,7 @@
 {
   "name": "inframod",
   "version": "1.1.0",
+  "keywords": ["micro framework", "file dependency", "local dependencies", "provisoin", "shared", "infrastructure", "docker"],
   "description": "Local node modules registration and provisioning micro-framework",
   "author": "Adrian Furculita",
   "license": "MIT",
