@@ -5,24 +5,19 @@
   "author": "Adrian Furculita",
   "license": "MIT",
   "scripts": {
-    "build": "provision-modules --key-path infrastructure.modules"
+    "build": "provision-modules --key-path modules"
   },
   "dependencies": {
-    "inframod": "^1.0.2"
+    "inframod": "^1.1.0"
   },
-  "infrastructure": {
-    "modules": {
-      "foo": {
-        "path": "/foo",
-        "provisionCommand": "yarn install && yarn run build"
-      },
-      "bar": {
-        "path": "/bar/bar",
-        "provisionCommand": "yarn install && yarn run build",
-        "dependsOn": [
-          "foo"
-        ]
-      }
+  "modules": [
+    {
+      "path": "/foo",
+      "provisionCommand": "yarn install && yarn run build"
+    },
+    {
+      "path": "/bar/bar",
+      "provisionCommand": "yarn install && yarn run build"
     }
-  }
+  ]
 }
