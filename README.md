@@ -1,8 +1,8 @@
 # inframod
 
-Provisions local interdependent package dependencies.
-Create a layer of local node modules, referenced as file dependencies in package.json, so you won't need the packages published to npm or a local npm repo.
-Useful when you want to develop modular applications which rely on shared or common infrastructure modules without having them deployed on npm.
+Provisions local interdependent node modules referenced as file dependencies so you don't have to do this manually for each one.
+Removes the need for packages to be published to npm or a local npm repo.
+Useful when you want to develop modular applications which rely on shared or common infrastructure local modules without having them deployed on npm.
 
 ## Installation
 
@@ -29,7 +29,7 @@ Module registration requires the definition of the following section within pack
     }
 ]
 ```
-A key (foo, bar, etc.) is required to contain the definition of a module withing the "modules" sub-section of package.json.
+
 The required fields for a module definition are
 
 * path - the relative path of the module project (where the package.json for that module is located)
